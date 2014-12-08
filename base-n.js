@@ -1,8 +1,12 @@
+// This function will take a string containing the number to be converted and another string containing the character set of the number system it is converting from.
+
 function convertToDec (sourceNumber, sourceCharacters) {
     var result = 0;
     var sourceBase = sourceCharacters.length;
     for (var i=0; i < sourceNumber.length; i++) {
         var currentDigit = sourceNumber[i];
+        // position is counting from right to left.
+        // (position=0 for the rightmost digit.)
         var position = sourceNumber.length - i - 1;
         var characterValue = sourceCharacters.indexOf(currentDigit);
         if (characterValue === -1) {
