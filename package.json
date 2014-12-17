@@ -1,0 +1,34 @@
+{
+  "name": "basen",
+  "version": "1.0.0",
+  "description": "library for converting any position-based number system into any other position-based number system (for example hexadecimal to base-54)",
+  "main": "base-n.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shecodes-students/Basen.git"
+  },
+  "keywords": [
+    "conversion",
+    "binary",
+    "hexadecimal",
+    "decimal",
+    "base64",
+    "octal",
+    "base-n",
+    "positional",
+    "notation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shecodes-students/Basen/issues"
+  },
+  "homepage": "https://github.com/shecodes-students/Basen",
+  "devDependencies": {
+    "expect": "^1.1.0",
+    "lab": "^5.1.0"
+  }
+}

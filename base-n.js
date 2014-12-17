@@ -30,3 +30,6 @@ function baseToBase (sourceCharacters, targetCharacters, sourceNumber) {
     // position 0
 }
 
+module.exports = {
+    convertToDec: convertToDec
+};
