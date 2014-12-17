@@ -8,7 +8,6 @@ binToDec = function(bin) {
 		var multiplier = Math.pow(2,pos);
 		var value = currDigit === '1' ? multiplier * 1 : 0;
 		result += value;
-	
 	}
 	return result;
 };
