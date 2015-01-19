@@ -1,6 +1,5 @@
-// This function will take a string containing the number to be converted and another string containing the character set of the number system it is converting from.
-
-function convertToDec(sourceNumber, sourceCharacters) {
+// This function will take a string containing the number to be converted and another string containing the character set of the number system it is converting from.  
+ function convertToDec(sourceNumber, sourceCharacters) {
     var result = 0;
     var sourceBase = sourceCharacters.length;
     for (var i=0; i < sourceNumber.length; i++) {
@@ -44,18 +43,14 @@ function convertFromDec(decNumber, targetCharacters) {
         do { 
             if (x >= targetBase) {
                 digit = Math.floor(x / targetBase);
-                console.log("digit", digit);
                 position++;
             } else {
                 digit = x;
-                console.log("digit", digit);
             }
             if (digit < targetBase) {
                 result[position] = digit;
                 remaining -= Math.pow(targetBase, position) * digit;
-                console.log("remaining", remaining);
             } else {
-                console.log("position", position);
                 x = digit;
             }
         } while (digit >= targetBase);
@@ -68,7 +63,7 @@ function convertFromDec(decNumber, targetCharacters) {
             result[i] = targetCharacters[result[i]];
         }
     }
-    return result;
+    return result.join('');
 }
 
 
@@ -86,5 +81,6 @@ function baseToBase (sourceCharacters, targetCharacters, sourceNumber) {
     // position 0
 }
 module.exports = {
-    convertToDec: convertToDec
+    convertToDec: convertToDec,
+    convertFromDec: convertFromDec
 };
