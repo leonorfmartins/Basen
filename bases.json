@@ -1,0 +1,7 @@
+{
+    "hex": "0123456789abcdef",
+    "bin": "01",
+    "oct": "01234567",
+    "dec": "0123456789",
+    "b64": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+}

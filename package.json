@@ -4,7 +4,7 @@
   "description": "library for converting any position-based number system into any other position-based number system (for example hexadecimal to base-54)",
   "main": "base-n.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab -v test.js"
   },
   "repository": {
     "type": "git",
