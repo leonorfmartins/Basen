@@ -1,4 +1,3 @@
-var bases = require('./bases.json');
 var Lab = require('lab');
 var lab = exports.lab = Lab.script();
 var convert = require('./base-n');
@@ -36,9 +35,17 @@ lab.test('baseToBase should correctly convert from one n-based system to another
     done();
 });
 
-
-lab.test("baseToBase should not blow up when confronted with a long base 64 number", function(done) {
+/*
+lab.test("baseToBase should not blow up when confronted with a long base 64 number", function() {
     var result = convert.baseToBase(bases.b64, '0123456789', 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCzS9yLPIyUZ0ZrItW8YjeMNC3kYcw82KeMo4jCgTsagWtktbtum0FvaNp0hQ5b0FRha9FLtWN77PxoeIfr9VBQWgqQoXjyQI+z/QSCAiByWekk4Qm8g9eWM+cv7yEOgIvVpli69h/YwECe9MGbrU6vmfSjIpUeyUM84v8K86gimWb2pHSMWvWR6mFk3qo0JZu+JV6wKhfNLyzJXwVIhC7+yd6eUuRyRG9NATnbvUxHxO37XMGn+jVZXxKvsGpy8Y4g1es8G9noZBm+Mn4Wd22RdKfAUrYWS12nQfGJf4aJFxvVl/4y+olFM+HhAcZ6wAQn6p4bGqq5VfbK31QpnKj1');
     console.log(result);
+    done();
+});
+*/
+
+lab.test('convertToDec should trhow an error when a character of the sourceNumber is not contained in the sourceCharacters', function(done) {
+    expect(function() {
+        convert.baseToBase('01', '0123456789', '102001000');
+    }).toThrow(/is not contained within the character set/);
     done();
 });

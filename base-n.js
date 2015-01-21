@@ -16,6 +16,9 @@ function convertToDec(sourceNumber, sourceCharacters) {
         }  
         result += Math.pow(sourceBase, position) * characterValue;
     }
+    if (isNaN(result)) {
+        throw new Error('Sorry, it seems the number is too big :(');
+    }
     return result;
 }
 
