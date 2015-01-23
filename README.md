@@ -20,5 +20,5 @@ dec,
 hex,
 b84
 are provided in bases.json and can be used instead of inputting their respective characters:
-`baseToBase(bin, hex, "1010101")`
+`baseToBase(bases.bin, bases.hex, "1010101")`
 will convert the binary number to hexadecimal.
