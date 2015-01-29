@@ -36,5 +36,6 @@ This command will convert the binary number to hexadecimal.
 * Jan Bölsche
 * Julia Friesel
 * Leonor Oliveira
+
 ##License
 Please check the package.json file.
