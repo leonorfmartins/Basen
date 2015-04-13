@@ -1,0 +1,12 @@
+.row {
+	padding: 20px;
+}
+.label-block {
+	display: block;
+}
+.center {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}

@@ -1,2 +1,4 @@
 node_modules
 *.swp
+/bootstrap-3.3.4-dist
+jquery-2.1.3.js
